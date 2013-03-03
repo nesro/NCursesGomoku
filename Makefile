@@ -8,7 +8,7 @@ CXXFLAGS=-Wall -pedantic -Wno-long-long -O0 -ggdb
 CXXLIBS=-lcurses
 OBJECTS=./main.o ./ai.o ./board.o ./client.o ./game.o ./local.o ./network.o ./network_exception.o ./player.o ./server.o
 DOXYFILE=./Doxyfile
-BINARY=./nesrotom
+BINARY=./ncursesgomoku
 SOURCE_DIR=./src/
 
 ################################################################################
