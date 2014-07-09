@@ -72,11 +72,8 @@ int main(int argc, char *argv[]) {
 		}
 	} catch (std::exception & e) {
 		delete game;
-
 		std::cerr << "Exception: " << e.what() << std::endl;
-
-		return EXIT_FAILURE;
 	}
 
-	return EXIT_SUCCESS;
+	return EXIT_FAILURE;
 }
