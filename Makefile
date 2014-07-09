@@ -27,7 +27,10 @@ clean:
 
 doc: $(DOXYFILE)
 	doxygen $(DOXYFILE)
-	
+
+valgrind:
+	valgrind --leak-check=full --track-origins=yes $(BINARY)
+
 ################################################################################
 
 $(BINARY): $(OBJECTS)
