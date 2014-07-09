@@ -47,9 +47,9 @@
  * @param argv Program arguments
  */
 int main(int argc, char *argv[]) {
-	CGame *game = new CGame(argc, argv);
-
+	CGame *game = NULL;
 	try {
+		game = new CGame(argc, argv);
 		for (;;) {
 			switch (game->m_Status) {
 			case CGame::STATUS_TURN:
